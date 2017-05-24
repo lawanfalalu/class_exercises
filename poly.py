@@ -14,8 +14,8 @@ def poly(min,max,step):
         f.append(sum)
         if(u>1):
             #if((f[u-1]*f[u])<0 and (f[u-1]*f[u])!=0) :
-            if(f[u-2]*f[u])<0:
-                guess.append(j)
+            if(f[u-1]*f[u])<0 or f[u]==0:
+                guess.append(j-1)
         u=u+1
         
         print("f(%f) = %f "%(j,sum))
