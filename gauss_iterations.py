@@ -1,4 +1,6 @@
 #Gauss iterartions
+# In Gauss Seidel you don't need to define X1
+# But in Gauss Jacobi X1 was defined
 print("j \t X1 \t X2 \t X3")
 y1=[];y2=[];y3=[]
 x1=4
