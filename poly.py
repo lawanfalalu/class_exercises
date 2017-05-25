@@ -13,13 +13,12 @@ def poly(min,max,step):
             sum = sum + coeff[k]*j**(degree-k)
         f.append(sum)
         if(u>1):
-            #if((f[u-1]*f[u])<0 and (f[u-1]*f[u])!=0) :
-            if(f[u-1]*f[u])<0 or f[u]==0:
-                guess.append(j-1)
+            if(f[u-1]*f[u])<=0:
+                guess.append(j)
         u=u+1
         
         print("f(%f) = %f "%(j,sum))
     print(guess)
 
 #Calling the method
-poly(-20,20,0.5)
+poly(-10,10,1)
